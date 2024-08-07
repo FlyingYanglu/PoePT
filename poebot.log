@@ -1,0 +1,1042 @@
+2024-08-05 21:36:56,528 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe
+2024-08-05 21:36:56,620 - DEBUG - Started executable: `C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe` in a child process with pid: 17888 using 0 to output -3
+2024-08-05 21:36:59,858 - DEBUG - Selenium Manager binary found at: C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe
+2024-08-05 21:36:59,858 - DEBUG - Executing process: C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser chrome --debug --language-binding python --output json
+2024-08-05 21:37:00,457 - DEBUG - Found chromedriver 127.0.6533.88 in PATH: C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers\chromedriver.exe
+2024-08-05 21:37:00,457 - DEBUG - chrome detected at C:\Program Files\Google\Chrome\Application\chrome.exe
+2024-08-05 21:37:00,457 - DEBUG - Running command: wmic datafile where name='C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe' get Version /value
+2024-08-05 21:37:00,457 - DEBUG - Output: "\r\r\n\r\r\nVersion=127.0.6533.89\r\r\n\r\r\n\r\r\n\r"
+2024-08-05 21:37:00,457 - DEBUG - Detected browser: chrome 127.0.6533.89
+2024-08-05 21:37:00,457 - DEBUG - Discovering versions from https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json
+2024-08-05 21:37:00,457 - DEBUG - Required driver: chromedriver 127.0.6533.88
+2024-08-05 21:37:00,457 - DEBUG - Driver path: C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers\chromedriver.exe
+2024-08-05 21:37:00,457 - DEBUG - Browser path: C:\Program Files\Google\Chrome\Application\chrome.exe
+2024-08-05 21:37:00,461 - DEBUG - Started executable: `C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers\chromedriver.exe` in a child process with pid: 2244 using 0 to output -3
+2024-08-05 21:37:05,964 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe
+2024-08-05 21:37:05,967 - DEBUG - Started executable: `C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe` in a child process with pid: 27976 using 0 to output -3
+2024-08-05 21:38:35,891 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe
+2024-08-05 21:38:35,894 - DEBUG - Started executable: `C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe` in a child process with pid: 24532 using 0 to output -3
+2024-08-05 21:38:37,511 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe
+2024-08-05 21:38:37,514 - DEBUG - Started executable: `C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe` in a child process with pid: 12864 using 0 to output -3
+2024-08-05 21:41:43,259 - ERROR - Exception occurred in ask method: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=127.0.6533.89); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF76B639632+30946]
+	(No symbol) [0x00007FF76B5EE3C9]
+	(No symbol) [0x00007FF76B4E6FDA]
+	(No symbol) [0x00007FF76B4EDA57]
+	(No symbol) [0x00007FF76B4EFD31]
+	(No symbol) [0x00007FF76B4EFDD0]
+	(No symbol) [0x00007FF76B53226B]
+	(No symbol) [0x00007FF76B55CA6A]
+	(No symbol) [0x00007FF76B52BBB6]
+	(No symbol) [0x00007FF76B55CC80]
+	(No symbol) [0x00007FF76B57B041]
+	(No symbol) [0x00007FF76B55C813]
+	(No symbol) [0x00007FF76B52A6E5]
+	(No symbol) [0x00007FF76B52B021]
+	GetHandleVerifier [0x00007FF76B76F83D+1301229]
+	GetHandleVerifier [0x00007FF76B77BDB7+1351783]
+	GetHandleVerifier [0x00007FF76B772A03+1313971]
+	GetHandleVerifier [0x00007FF76B66DD06+245686]
+	(No symbol) [0x00007FF76B5F758F]
+	(No symbol) [0x00007FF76B5F3804]
+	(No symbol) [0x00007FF76B5F3992]
+	(No symbol) [0x00007FF76B5EA3EF]
+	BaseThreadInitThunk [0x00007FFF1471257D+29]
+	RtlUserThreadStart [0x00007FFF1596AF28+40]
+
+2024-08-05 21:43:42,429 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe
+2024-08-05 21:43:42,431 - DEBUG - Started executable: `C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe` in a child process with pid: 22356 using 0 to output -3
+2024-08-05 21:43:43,604 - INFO - Existing cookies found at ./saved_cookies/cookies.txt
+2024-08-05 21:44:41,778 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe
+2024-08-05 21:44:41,781 - DEBUG - Started executable: `C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe` in a child process with pid: 30384 using 0 to output -3
+2024-08-05 21:44:42,910 - INFO - Existing cookies found at ./saved_cookies/cookies.txt
+2024-08-05 21:45:24,319 - ERROR - Exception occurred in ask method: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=127.0.6533.89); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF76B639632+30946]
+	(No symbol) [0x00007FF76B5EE3C9]
+	(No symbol) [0x00007FF76B4E6FDA]
+	(No symbol) [0x00007FF76B4EDA57]
+	(No symbol) [0x00007FF76B4F0058]
+	(No symbol) [0x00007FF76B57BD7B]
+	(No symbol) [0x00007FF76B55CA6A]
+	(No symbol) [0x00007FF76B57B041]
+	(No symbol) [0x00007FF76B55C813]
+	(No symbol) [0x00007FF76B52A6E5]
+	(No symbol) [0x00007FF76B52B021]
+	GetHandleVerifier [0x00007FF76B76F83D+1301229]
+	GetHandleVerifier [0x00007FF76B77BDB7+1351783]
+	GetHandleVerifier [0x00007FF76B772A03+1313971]
+	GetHandleVerifier [0x00007FF76B66DD06+245686]
+	(No symbol) [0x00007FF76B5F758F]
+	(No symbol) [0x00007FF76B5F3804]
+	(No symbol) [0x00007FF76B5F3992]
+	(No symbol) [0x00007FF76B5EA3EF]
+	BaseThreadInitThunk [0x00007FFF1471257D+29]
+	RtlUserThreadStart [0x00007FFF1596AF28+40]
+
+2024-08-05 21:45:38,629 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe
+2024-08-05 21:45:38,632 - DEBUG - Started executable: `C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe` in a child process with pid: 15244 using 0 to output -3
+2024-08-05 21:45:39,817 - INFO - Existing cookies found at ./saved_cookies/cookies.txt
+2024-08-06 16:18:17,065 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe
+2024-08-06 16:18:17,069 - DEBUG - Started executable: `C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe` in a child process with pid: 18780 using 0 to output -3
+2024-08-06 16:18:18,487 - INFO - Existing cookies found at ./saved_cookies/cookies.txt
+2024-08-06 16:18:26,158 - ERROR - Exception occurred in ask method: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF768119632+30946]
+	(No symbol) [0x00007FF7680CE3C9]
+	(No symbol) [0x00007FF767FC6FDA]
+	(No symbol) [0x00007FF767F9CB85]
+	(No symbol) [0x00007FF7680437A7]
+	(No symbol) [0x00007FF76805A771]
+	(No symbol) [0x00007FF76803C813]
+	(No symbol) [0x00007FF76800A6E5]
+	(No symbol) [0x00007FF76800B021]
+	GetHandleVerifier [0x00007FF76824F83D+1301229]
+	GetHandleVerifier [0x00007FF76825BDB7+1351783]
+	GetHandleVerifier [0x00007FF768252A03+1313971]
+	GetHandleVerifier [0x00007FF76814DD06+245686]
+	(No symbol) [0x00007FF7680D758F]
+	(No symbol) [0x00007FF7680D3804]
+	(No symbol) [0x00007FF7680D3992]
+	(No symbol) [0x00007FF7680CA3EF]
+	BaseThreadInitThunk [0x00007FFF1471257D+29]
+	RtlUserThreadStart [0x00007FFF1596AF28+40]
+
+2024-08-06 16:18:36,249 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe
+2024-08-06 16:18:36,253 - DEBUG - Started executable: `C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe` in a child process with pid: 27424 using 0 to output -3
+2024-08-06 16:18:37,330 - INFO - Existing cookies found at ./saved_cookies/cookies.txt
+2024-08-06 16:21:04,092 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe
+2024-08-06 16:21:04,097 - DEBUG - Started executable: `C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe` in a child process with pid: 32276 using 0 to output -3
+2024-08-06 16:21:05,136 - INFO - Existing cookies found at ./saved_cookies/cookies.txt
+2024-08-06 16:21:14,084 - ERROR - Exception occurred in ask method: 'NoneType' object has no attribute 'get_attribute'
+2024-08-06 16:21:19,086 - ERROR - Exception occurred in ask method: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF768119632+30946]
+	(No symbol) [0x00007FF7680CE3C9]
+	(No symbol) [0x00007FF767FC6FDA]
+	(No symbol) [0x00007FF767F9CB85]
+	(No symbol) [0x00007FF7680437A7]
+	(No symbol) [0x00007FF76805A771]
+	(No symbol) [0x00007FF76803C813]
+	(No symbol) [0x00007FF76800A6E5]
+	(No symbol) [0x00007FF76800B021]
+	GetHandleVerifier [0x00007FF76824F83D+1301229]
+	GetHandleVerifier [0x00007FF76825BDB7+1351783]
+	GetHandleVerifier [0x00007FF768252A03+1313971]
+	GetHandleVerifier [0x00007FF76814DD06+245686]
+	(No symbol) [0x00007FF7680D758F]
+	(No symbol) [0x00007FF7680D3804]
+	(No symbol) [0x00007FF7680D3992]
+	(No symbol) [0x00007FF7680CA3EF]
+	BaseThreadInitThunk [0x00007FFF1471257D+29]
+	RtlUserThreadStart [0x00007FFF1596AF28+40]
+
+2024-08-06 16:21:48,048 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe
+2024-08-06 16:21:48,052 - DEBUG - Started executable: `C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe` in a child process with pid: 32444 using 0 to output -3
+2024-08-06 16:21:49,242 - INFO - Existing cookies found at ./saved_cookies/cookies.txt
+2024-08-06 16:21:55,496 - ERROR - Exception occurred in ask method: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=127.0.6533.89); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF768119632+30946]
+	(No symbol) [0x00007FF7680CE3C9]
+	(No symbol) [0x00007FF767FC6FDA]
+	(No symbol) [0x00007FF767FCDA57]
+	(No symbol) [0x00007FF767FCFD31]
+	(No symbol) [0x00007FF767FCFDD0]
+	(No symbol) [0x00007FF768019122]
+	(No symbol) [0x00007FF7680191E2]
+	(No symbol) [0x00007FF76800F11B]
+	(No symbol) [0x00007FF76803CA6A]
+	(No symbol) [0x00007FF76800BBB6]
+	(No symbol) [0x00007FF76803CC80]
+	(No symbol) [0x00007FF76805B041]
+	(No symbol) [0x00007FF76803C813]
+	(No symbol) [0x00007FF76800A6E5]
+	(No symbol) [0x00007FF76800B021]
+	GetHandleVerifier [0x00007FF76824F83D+1301229]
+	GetHandleVerifier [0x00007FF76825BDB7+1351783]
+	GetHandleVerifier [0x00007FF768252A03+1313971]
+	GetHandleVerifier [0x00007FF76814DD06+245686]
+	(No symbol) [0x00007FF7680D758F]
+	(No symbol) [0x00007FF7680D3804]
+	(No symbol) [0x00007FF7680D3992]
+	(No symbol) [0x00007FF7680CA3EF]
+	BaseThreadInitThunk [0x00007FFF1471257D+29]
+	RtlUserThreadStart [0x00007FFF1596AF28+40]
+
+2024-08-06 16:21:56,196 - ERROR - Exception occurred in ask method: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF768119632+30946]
+	(No symbol) [0x00007FF7680CE3C9]
+	(No symbol) [0x00007FF767FC6FDA]
+	(No symbol) [0x00007FF767F9CB85]
+	(No symbol) [0x00007FF7680437A7]
+	(No symbol) [0x00007FF76805A771]
+	(No symbol) [0x00007FF76803C813]
+	(No symbol) [0x00007FF76800A6E5]
+	(No symbol) [0x00007FF76800B021]
+	GetHandleVerifier [0x00007FF76824F83D+1301229]
+	GetHandleVerifier [0x00007FF76825BDB7+1351783]
+	GetHandleVerifier [0x00007FF768252A03+1313971]
+	GetHandleVerifier [0x00007FF76814DD06+245686]
+	(No symbol) [0x00007FF7680D758F]
+	(No symbol) [0x00007FF7680D3804]
+	(No symbol) [0x00007FF7680D3992]
+	(No symbol) [0x00007FF7680CA3EF]
+	BaseThreadInitThunk [0x00007FFF1471257D+29]
+	RtlUserThreadStart [0x00007FFF1596AF28+40]
+
+2024-08-06 16:22:22,962 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe
+2024-08-06 16:22:22,965 - DEBUG - Started executable: `C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe` in a child process with pid: 7752 using 0 to output -3
+2024-08-06 16:22:24,038 - INFO - Existing cookies found at ./saved_cookies/cookies.txt
+2024-08-06 16:22:32,714 - ERROR - Exception occurred in ask method: 'NoneType' object has no attribute 'get_attribute'
+2024-08-06 16:22:37,716 - ERROR - Exception occurred in ask method: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF768119632+30946]
+	(No symbol) [0x00007FF7680CE3C9]
+	(No symbol) [0x00007FF767FC6FDA]
+	(No symbol) [0x00007FF767F9CB85]
+	(No symbol) [0x00007FF7680437A7]
+	(No symbol) [0x00007FF76805A771]
+	(No symbol) [0x00007FF76803C813]
+	(No symbol) [0x00007FF76800A6E5]
+	(No symbol) [0x00007FF76800B021]
+	GetHandleVerifier [0x00007FF76824F83D+1301229]
+	GetHandleVerifier [0x00007FF76825BDB7+1351783]
+	GetHandleVerifier [0x00007FF768252A03+1313971]
+	GetHandleVerifier [0x00007FF76814DD06+245686]
+	(No symbol) [0x00007FF7680D758F]
+	(No symbol) [0x00007FF7680D3804]
+	(No symbol) [0x00007FF7680D3992]
+	(No symbol) [0x00007FF7680CA3EF]
+	BaseThreadInitThunk [0x00007FFF1471257D+29]
+	RtlUserThreadStart [0x00007FFF1596AF28+40]
+
+2024-08-06 16:22:42,718 - ERROR - Exception occurred in ask method: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF768119632+30946]
+	(No symbol) [0x00007FF7680CE3C9]
+	(No symbol) [0x00007FF767FC6FDA]
+	(No symbol) [0x00007FF767F9CB85]
+	(No symbol) [0x00007FF7680437A7]
+	(No symbol) [0x00007FF76805A771]
+	(No symbol) [0x00007FF76803C813]
+	(No symbol) [0x00007FF76800A6E5]
+	(No symbol) [0x00007FF76800B021]
+	GetHandleVerifier [0x00007FF76824F83D+1301229]
+	GetHandleVerifier [0x00007FF76825BDB7+1351783]
+	GetHandleVerifier [0x00007FF768252A03+1313971]
+	GetHandleVerifier [0x00007FF76814DD06+245686]
+	(No symbol) [0x00007FF7680D758F]
+	(No symbol) [0x00007FF7680D3804]
+	(No symbol) [0x00007FF7680D3992]
+	(No symbol) [0x00007FF7680CA3EF]
+	BaseThreadInitThunk [0x00007FFF1471257D+29]
+	RtlUserThreadStart [0x00007FFF1596AF28+40]
+
+2024-08-06 16:22:47,720 - ERROR - Exception occurred in ask method: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF768119632+30946]
+	(No symbol) [0x00007FF7680CE3C9]
+	(No symbol) [0x00007FF767FC6FDA]
+	(No symbol) [0x00007FF767F9CB85]
+	(No symbol) [0x00007FF7680437A7]
+	(No symbol) [0x00007FF76805A771]
+	(No symbol) [0x00007FF76803C813]
+	(No symbol) [0x00007FF76800A6E5]
+	(No symbol) [0x00007FF76800B021]
+	GetHandleVerifier [0x00007FF76824F83D+1301229]
+	GetHandleVerifier [0x00007FF76825BDB7+1351783]
+	GetHandleVerifier [0x00007FF768252A03+1313971]
+	GetHandleVerifier [0x00007FF76814DD06+245686]
+	(No symbol) [0x00007FF7680D758F]
+	(No symbol) [0x00007FF7680D3804]
+	(No symbol) [0x00007FF7680D3992]
+	(No symbol) [0x00007FF7680CA3EF]
+	BaseThreadInitThunk [0x00007FFF1471257D+29]
+	RtlUserThreadStart [0x00007FFF1596AF28+40]
+
+2024-08-06 16:22:52,721 - ERROR - Exception occurred in ask method: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF768119632+30946]
+	(No symbol) [0x00007FF7680CE3C9]
+	(No symbol) [0x00007FF767FC6FDA]
+	(No symbol) [0x00007FF767F9CB85]
+	(No symbol) [0x00007FF7680437A7]
+	(No symbol) [0x00007FF76805A771]
+	(No symbol) [0x00007FF76803C813]
+	(No symbol) [0x00007FF76800A6E5]
+	(No symbol) [0x00007FF76800B021]
+	GetHandleVerifier [0x00007FF76824F83D+1301229]
+	GetHandleVerifier [0x00007FF76825BDB7+1351783]
+	GetHandleVerifier [0x00007FF768252A03+1313971]
+	GetHandleVerifier [0x00007FF76814DD06+245686]
+	(No symbol) [0x00007FF7680D758F]
+	(No symbol) [0x00007FF7680D3804]
+	(No symbol) [0x00007FF7680D3992]
+	(No symbol) [0x00007FF7680CA3EF]
+	BaseThreadInitThunk [0x00007FFF1471257D+29]
+	RtlUserThreadStart [0x00007FFF1596AF28+40]
+
+2024-08-06 16:22:57,724 - ERROR - Exception occurred in ask method: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF768119632+30946]
+	(No symbol) [0x00007FF7680CE3C9]
+	(No symbol) [0x00007FF767FC6FDA]
+	(No symbol) [0x00007FF767F9CB85]
+	(No symbol) [0x00007FF7680437A7]
+	(No symbol) [0x00007FF76805A771]
+	(No symbol) [0x00007FF76803C813]
+	(No symbol) [0x00007FF76800A6E5]
+	(No symbol) [0x00007FF76800B021]
+	GetHandleVerifier [0x00007FF76824F83D+1301229]
+	GetHandleVerifier [0x00007FF76825BDB7+1351783]
+	GetHandleVerifier [0x00007FF768252A03+1313971]
+	GetHandleVerifier [0x00007FF76814DD06+245686]
+	(No symbol) [0x00007FF7680D758F]
+	(No symbol) [0x00007FF7680D3804]
+	(No symbol) [0x00007FF7680D3992]
+	(No symbol) [0x00007FF7680CA3EF]
+	BaseThreadInitThunk [0x00007FFF1471257D+29]
+	RtlUserThreadStart [0x00007FFF1596AF28+40]
+
+2024-08-06 16:23:02,726 - ERROR - Exception occurred in ask method: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF768119632+30946]
+	(No symbol) [0x00007FF7680CE3C9]
+	(No symbol) [0x00007FF767FC6FDA]
+	(No symbol) [0x00007FF767F9CB85]
+	(No symbol) [0x00007FF7680437A7]
+	(No symbol) [0x00007FF76805A771]
+	(No symbol) [0x00007FF76803C813]
+	(No symbol) [0x00007FF76800A6E5]
+	(No symbol) [0x00007FF76800B021]
+	GetHandleVerifier [0x00007FF76824F83D+1301229]
+	GetHandleVerifier [0x00007FF76825BDB7+1351783]
+	GetHandleVerifier [0x00007FF768252A03+1313971]
+	GetHandleVerifier [0x00007FF76814DD06+245686]
+	(No symbol) [0x00007FF7680D758F]
+	(No symbol) [0x00007FF7680D3804]
+	(No symbol) [0x00007FF7680D3992]
+	(No symbol) [0x00007FF7680CA3EF]
+	BaseThreadInitThunk [0x00007FFF1471257D+29]
+	RtlUserThreadStart [0x00007FFF1596AF28+40]
+
+2024-08-06 16:23:07,728 - ERROR - Exception occurred in ask method: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF768119632+30946]
+	(No symbol) [0x00007FF7680CE3C9]
+	(No symbol) [0x00007FF767FC6FDA]
+	(No symbol) [0x00007FF767F9CB85]
+	(No symbol) [0x00007FF7680437A7]
+	(No symbol) [0x00007FF76805A771]
+	(No symbol) [0x00007FF76803C813]
+	(No symbol) [0x00007FF76800A6E5]
+	(No symbol) [0x00007FF76800B021]
+	GetHandleVerifier [0x00007FF76824F83D+1301229]
+	GetHandleVerifier [0x00007FF76825BDB7+1351783]
+	GetHandleVerifier [0x00007FF768252A03+1313971]
+	GetHandleVerifier [0x00007FF76814DD06+245686]
+	(No symbol) [0x00007FF7680D758F]
+	(No symbol) [0x00007FF7680D3804]
+	(No symbol) [0x00007FF7680D3992]
+	(No symbol) [0x00007FF7680CA3EF]
+	BaseThreadInitThunk [0x00007FFF1471257D+29]
+	RtlUserThreadStart [0x00007FFF1596AF28+40]
+
+2024-08-06 16:23:12,729 - ERROR - Exception occurred in ask method: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF768119632+30946]
+	(No symbol) [0x00007FF7680CE3C9]
+	(No symbol) [0x00007FF767FC6FDA]
+	(No symbol) [0x00007FF767F9CB85]
+	(No symbol) [0x00007FF7680437A7]
+	(No symbol) [0x00007FF76805A771]
+	(No symbol) [0x00007FF76803C813]
+	(No symbol) [0x00007FF76800A6E5]
+	(No symbol) [0x00007FF76800B021]
+	GetHandleVerifier [0x00007FF76824F83D+1301229]
+	GetHandleVerifier [0x00007FF76825BDB7+1351783]
+	GetHandleVerifier [0x00007FF768252A03+1313971]
+	GetHandleVerifier [0x00007FF76814DD06+245686]
+	(No symbol) [0x00007FF7680D758F]
+	(No symbol) [0x00007FF7680D3804]
+	(No symbol) [0x00007FF7680D3992]
+	(No symbol) [0x00007FF7680CA3EF]
+	BaseThreadInitThunk [0x00007FFF1471257D+29]
+	RtlUserThreadStart [0x00007FFF1596AF28+40]
+
+2024-08-06 16:23:17,731 - ERROR - Exception occurred in ask method: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF768119632+30946]
+	(No symbol) [0x00007FF7680CE3C9]
+	(No symbol) [0x00007FF767FC6FDA]
+	(No symbol) [0x00007FF767F9CB85]
+	(No symbol) [0x00007FF7680437A7]
+	(No symbol) [0x00007FF76805A771]
+	(No symbol) [0x00007FF76803C813]
+	(No symbol) [0x00007FF76800A6E5]
+	(No symbol) [0x00007FF76800B021]
+	GetHandleVerifier [0x00007FF76824F83D+1301229]
+	GetHandleVerifier [0x00007FF76825BDB7+1351783]
+	GetHandleVerifier [0x00007FF768252A03+1313971]
+	GetHandleVerifier [0x00007FF76814DD06+245686]
+	(No symbol) [0x00007FF7680D758F]
+	(No symbol) [0x00007FF7680D3804]
+	(No symbol) [0x00007FF7680D3992]
+	(No symbol) [0x00007FF7680CA3EF]
+	BaseThreadInitThunk [0x00007FFF1471257D+29]
+	RtlUserThreadStart [0x00007FFF1596AF28+40]
+
+2024-08-06 16:23:22,733 - ERROR - Exception occurred in ask method: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF768119632+30946]
+	(No symbol) [0x00007FF7680CE3C9]
+	(No symbol) [0x00007FF767FC6FDA]
+	(No symbol) [0x00007FF767F9CB85]
+	(No symbol) [0x00007FF7680437A7]
+	(No symbol) [0x00007FF76805A771]
+	(No symbol) [0x00007FF76803C813]
+	(No symbol) [0x00007FF76800A6E5]
+	(No symbol) [0x00007FF76800B021]
+	GetHandleVerifier [0x00007FF76824F83D+1301229]
+	GetHandleVerifier [0x00007FF76825BDB7+1351783]
+	GetHandleVerifier [0x00007FF768252A03+1313971]
+	GetHandleVerifier [0x00007FF76814DD06+245686]
+	(No symbol) [0x00007FF7680D758F]
+	(No symbol) [0x00007FF7680D3804]
+	(No symbol) [0x00007FF7680D3992]
+	(No symbol) [0x00007FF7680CA3EF]
+	BaseThreadInitThunk [0x00007FFF1471257D+29]
+	RtlUserThreadStart [0x00007FFF1596AF28+40]
+
+2024-08-06 16:23:27,734 - ERROR - Exception occurred in ask method: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF768119632+30946]
+	(No symbol) [0x00007FF7680CE3C9]
+	(No symbol) [0x00007FF767FC6FDA]
+	(No symbol) [0x00007FF767F9CB85]
+	(No symbol) [0x00007FF7680437A7]
+	(No symbol) [0x00007FF76805A771]
+	(No symbol) [0x00007FF76803C813]
+	(No symbol) [0x00007FF76800A6E5]
+	(No symbol) [0x00007FF76800B021]
+	GetHandleVerifier [0x00007FF76824F83D+1301229]
+	GetHandleVerifier [0x00007FF76825BDB7+1351783]
+	GetHandleVerifier [0x00007FF768252A03+1313971]
+	GetHandleVerifier [0x00007FF76814DD06+245686]
+	(No symbol) [0x00007FF7680D758F]
+	(No symbol) [0x00007FF7680D3804]
+	(No symbol) [0x00007FF7680D3992]
+	(No symbol) [0x00007FF7680CA3EF]
+	BaseThreadInitThunk [0x00007FFF1471257D+29]
+	RtlUserThreadStart [0x00007FFF1596AF28+40]
+
+2024-08-06 16:23:32,737 - ERROR - Exception occurred in ask method: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF768119632+30946]
+	(No symbol) [0x00007FF7680CE3C9]
+	(No symbol) [0x00007FF767FC6FDA]
+	(No symbol) [0x00007FF767F9CB85]
+	(No symbol) [0x00007FF7680437A7]
+	(No symbol) [0x00007FF76805A771]
+	(No symbol) [0x00007FF76803C813]
+	(No symbol) [0x00007FF76800A6E5]
+	(No symbol) [0x00007FF76800B021]
+	GetHandleVerifier [0x00007FF76824F83D+1301229]
+	GetHandleVerifier [0x00007FF76825BDB7+1351783]
+	GetHandleVerifier [0x00007FF768252A03+1313971]
+	GetHandleVerifier [0x00007FF76814DD06+245686]
+	(No symbol) [0x00007FF7680D758F]
+	(No symbol) [0x00007FF7680D3804]
+	(No symbol) [0x00007FF7680D3992]
+	(No symbol) [0x00007FF7680CA3EF]
+	BaseThreadInitThunk [0x00007FFF1471257D+29]
+	RtlUserThreadStart [0x00007FFF1596AF28+40]
+
+2024-08-06 16:23:37,739 - ERROR - Exception occurred in ask method: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF768119632+30946]
+	(No symbol) [0x00007FF7680CE3C9]
+	(No symbol) [0x00007FF767FC6FDA]
+	(No symbol) [0x00007FF767F9CB85]
+	(No symbol) [0x00007FF7680437A7]
+	(No symbol) [0x00007FF76805A771]
+	(No symbol) [0x00007FF76803C813]
+	(No symbol) [0x00007FF76800A6E5]
+	(No symbol) [0x00007FF76800B021]
+	GetHandleVerifier [0x00007FF76824F83D+1301229]
+	GetHandleVerifier [0x00007FF76825BDB7+1351783]
+	GetHandleVerifier [0x00007FF768252A03+1313971]
+	GetHandleVerifier [0x00007FF76814DD06+245686]
+	(No symbol) [0x00007FF7680D758F]
+	(No symbol) [0x00007FF7680D3804]
+	(No symbol) [0x00007FF7680D3992]
+	(No symbol) [0x00007FF7680CA3EF]
+	BaseThreadInitThunk [0x00007FFF1471257D+29]
+	RtlUserThreadStart [0x00007FFF1596AF28+40]
+
+2024-08-06 16:23:42,741 - ERROR - Exception occurred in ask method: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF768119632+30946]
+	(No symbol) [0x00007FF7680CE3C9]
+	(No symbol) [0x00007FF767FC6FDA]
+	(No symbol) [0x00007FF767F9CB85]
+	(No symbol) [0x00007FF7680437A7]
+	(No symbol) [0x00007FF76805A771]
+	(No symbol) [0x00007FF76803C813]
+	(No symbol) [0x00007FF76800A6E5]
+	(No symbol) [0x00007FF76800B021]
+	GetHandleVerifier [0x00007FF76824F83D+1301229]
+	GetHandleVerifier [0x00007FF76825BDB7+1351783]
+	GetHandleVerifier [0x00007FF768252A03+1313971]
+	GetHandleVerifier [0x00007FF76814DD06+245686]
+	(No symbol) [0x00007FF7680D758F]
+	(No symbol) [0x00007FF7680D3804]
+	(No symbol) [0x00007FF7680D3992]
+	(No symbol) [0x00007FF7680CA3EF]
+	BaseThreadInitThunk [0x00007FFF1471257D+29]
+	RtlUserThreadStart [0x00007FFF1596AF28+40]
+
+2024-08-06 16:23:47,743 - ERROR - Exception occurred in ask method: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF768119632+30946]
+	(No symbol) [0x00007FF7680CE3C9]
+	(No symbol) [0x00007FF767FC6FDA]
+	(No symbol) [0x00007FF767F9CB85]
+	(No symbol) [0x00007FF7680437A7]
+	(No symbol) [0x00007FF76805A771]
+	(No symbol) [0x00007FF76803C813]
+	(No symbol) [0x00007FF76800A6E5]
+	(No symbol) [0x00007FF76800B021]
+	GetHandleVerifier [0x00007FF76824F83D+1301229]
+	GetHandleVerifier [0x00007FF76825BDB7+1351783]
+	GetHandleVerifier [0x00007FF768252A03+1313971]
+	GetHandleVerifier [0x00007FF76814DD06+245686]
+	(No symbol) [0x00007FF7680D758F]
+	(No symbol) [0x00007FF7680D3804]
+	(No symbol) [0x00007FF7680D3992]
+	(No symbol) [0x00007FF7680CA3EF]
+	BaseThreadInitThunk [0x00007FFF1471257D+29]
+	RtlUserThreadStart [0x00007FFF1596AF28+40]
+
+2024-08-06 16:23:52,745 - ERROR - Exception occurred in ask method: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF768119632+30946]
+	(No symbol) [0x00007FF7680CE3C9]
+	(No symbol) [0x00007FF767FC6FDA]
+	(No symbol) [0x00007FF767F9CB85]
+	(No symbol) [0x00007FF7680437A7]
+	(No symbol) [0x00007FF76805A771]
+	(No symbol) [0x00007FF76803C813]
+	(No symbol) [0x00007FF76800A6E5]
+	(No symbol) [0x00007FF76800B021]
+	GetHandleVerifier [0x00007FF76824F83D+1301229]
+	GetHandleVerifier [0x00007FF76825BDB7+1351783]
+	GetHandleVerifier [0x00007FF768252A03+1313971]
+	GetHandleVerifier [0x00007FF76814DD06+245686]
+	(No symbol) [0x00007FF7680D758F]
+	(No symbol) [0x00007FF7680D3804]
+	(No symbol) [0x00007FF7680D3992]
+	(No symbol) [0x00007FF7680CA3EF]
+	BaseThreadInitThunk [0x00007FFF1471257D+29]
+	RtlUserThreadStart [0x00007FFF1596AF28+40]
+
+2024-08-06 16:23:57,747 - ERROR - Exception occurred in ask method: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF768119632+30946]
+	(No symbol) [0x00007FF7680CE3C9]
+	(No symbol) [0x00007FF767FC6FDA]
+	(No symbol) [0x00007FF767F9CB85]
+	(No symbol) [0x00007FF7680437A7]
+	(No symbol) [0x00007FF76805A771]
+	(No symbol) [0x00007FF76803C813]
+	(No symbol) [0x00007FF76800A6E5]
+	(No symbol) [0x00007FF76800B021]
+	GetHandleVerifier [0x00007FF76824F83D+1301229]
+	GetHandleVerifier [0x00007FF76825BDB7+1351783]
+	GetHandleVerifier [0x00007FF768252A03+1313971]
+	GetHandleVerifier [0x00007FF76814DD06+245686]
+	(No symbol) [0x00007FF7680D758F]
+	(No symbol) [0x00007FF7680D3804]
+	(No symbol) [0x00007FF7680D3992]
+	(No symbol) [0x00007FF7680CA3EF]
+	BaseThreadInitThunk [0x00007FFF1471257D+29]
+	RtlUserThreadStart [0x00007FFF1596AF28+40]
+
+2024-08-06 16:24:02,749 - ERROR - Exception occurred in ask method: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF768119632+30946]
+	(No symbol) [0x00007FF7680CE3C9]
+	(No symbol) [0x00007FF767FC6FDA]
+	(No symbol) [0x00007FF767F9CB85]
+	(No symbol) [0x00007FF7680437A7]
+	(No symbol) [0x00007FF76805A771]
+	(No symbol) [0x00007FF76803C813]
+	(No symbol) [0x00007FF76800A6E5]
+	(No symbol) [0x00007FF76800B021]
+	GetHandleVerifier [0x00007FF76824F83D+1301229]
+	GetHandleVerifier [0x00007FF76825BDB7+1351783]
+	GetHandleVerifier [0x00007FF768252A03+1313971]
+	GetHandleVerifier [0x00007FF76814DD06+245686]
+	(No symbol) [0x00007FF7680D758F]
+	(No symbol) [0x00007FF7680D3804]
+	(No symbol) [0x00007FF7680D3992]
+	(No symbol) [0x00007FF7680CA3EF]
+	BaseThreadInitThunk [0x00007FFF1471257D+29]
+	RtlUserThreadStart [0x00007FFF1596AF28+40]
+
+2024-08-06 16:24:07,749 - ERROR - Exception occurred in ask method: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF768119632+30946]
+	(No symbol) [0x00007FF7680CE3C9]
+	(No symbol) [0x00007FF767FC6FDA]
+	(No symbol) [0x00007FF767F9CB85]
+	(No symbol) [0x00007FF7680437A7]
+	(No symbol) [0x00007FF76805A771]
+	(No symbol) [0x00007FF76803C813]
+	(No symbol) [0x00007FF76800A6E5]
+	(No symbol) [0x00007FF76800B021]
+	GetHandleVerifier [0x00007FF76824F83D+1301229]
+	GetHandleVerifier [0x00007FF76825BDB7+1351783]
+	GetHandleVerifier [0x00007FF768252A03+1313971]
+	GetHandleVerifier [0x00007FF76814DD06+245686]
+	(No symbol) [0x00007FF7680D758F]
+	(No symbol) [0x00007FF7680D3804]
+	(No symbol) [0x00007FF7680D3992]
+	(No symbol) [0x00007FF7680CA3EF]
+	BaseThreadInitThunk [0x00007FFF1471257D+29]
+	RtlUserThreadStart [0x00007FFF1596AF28+40]
+
+2024-08-06 16:24:12,752 - ERROR - Exception occurred in ask method: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF768119632+30946]
+	(No symbol) [0x00007FF7680CE3C9]
+	(No symbol) [0x00007FF767FC6FDA]
+	(No symbol) [0x00007FF767F9CB85]
+	(No symbol) [0x00007FF7680437A7]
+	(No symbol) [0x00007FF76805A771]
+	(No symbol) [0x00007FF76803C813]
+	(No symbol) [0x00007FF76800A6E5]
+	(No symbol) [0x00007FF76800B021]
+	GetHandleVerifier [0x00007FF76824F83D+1301229]
+	GetHandleVerifier [0x00007FF76825BDB7+1351783]
+	GetHandleVerifier [0x00007FF768252A03+1313971]
+	GetHandleVerifier [0x00007FF76814DD06+245686]
+	(No symbol) [0x00007FF7680D758F]
+	(No symbol) [0x00007FF7680D3804]
+	(No symbol) [0x00007FF7680D3992]
+	(No symbol) [0x00007FF7680CA3EF]
+	BaseThreadInitThunk [0x00007FFF1471257D+29]
+	RtlUserThreadStart [0x00007FFF1596AF28+40]
+
+2024-08-06 16:24:22,923 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe
+2024-08-06 16:24:22,926 - DEBUG - Started executable: `C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe` in a child process with pid: 29196 using 0 to output -3
+2024-08-06 16:24:23,980 - INFO - Existing cookies found at ./saved_cookies/cookies.txt
+2024-08-06 16:25:05,162 - ERROR - Exception occurred in ask method: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF768119632+30946]
+	(No symbol) [0x00007FF7680CE3C9]
+	(No symbol) [0x00007FF767FC6FDA]
+	(No symbol) [0x00007FF767F9CB85]
+	(No symbol) [0x00007FF7680437A7]
+	(No symbol) [0x00007FF76805A771]
+	(No symbol) [0x00007FF76803C813]
+	(No symbol) [0x00007FF76800A6E5]
+	(No symbol) [0x00007FF76800B021]
+	GetHandleVerifier [0x00007FF76824F83D+1301229]
+	GetHandleVerifier [0x00007FF76825BDB7+1351783]
+	GetHandleVerifier [0x00007FF768252A03+1313971]
+	GetHandleVerifier [0x00007FF76814DD06+245686]
+	(No symbol) [0x00007FF7680D758F]
+	(No symbol) [0x00007FF7680D3804]
+	(No symbol) [0x00007FF7680D3992]
+	(No symbol) [0x00007FF7680CA3EF]
+	BaseThreadInitThunk [0x00007FFF1471257D+29]
+	RtlUserThreadStart [0x00007FFF1596AF28+40]
+
+2024-08-06 16:31:07,459 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe
+2024-08-06 16:31:07,463 - DEBUG - Started executable: `C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe` in a child process with pid: 29736 using 0 to output -3
+2024-08-06 16:31:08,520 - INFO - Existing cookies found at ./saved_cookies/cookies.txt
+2024-08-06 16:36:01,442 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe
+2024-08-06 16:36:01,445 - DEBUG - Started executable: `C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe` in a child process with pid: 17760 using 0 to output -3
+2024-08-06 16:36:02,508 - INFO - Existing cookies found at ./saved_cookies/cookies.txt
+2024-08-06 16:37:34,279 - ERROR - Exception occurred in ask method: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=127.0.6533.89); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF768119632+30946]
+	(No symbol) [0x00007FF7680CE3C9]
+	(No symbol) [0x00007FF767FC6FDA]
+	(No symbol) [0x00007FF767FCDA57]
+	(No symbol) [0x00007FF767FCFD31]
+	(No symbol) [0x00007FF767FCFDD0]
+	(No symbol) [0x00007FF76801226B]
+	(No symbol) [0x00007FF76803CA6A]
+	(No symbol) [0x00007FF76800BBB6]
+	(No symbol) [0x00007FF76803CC80]
+	(No symbol) [0x00007FF76805B041]
+	(No symbol) [0x00007FF76803C813]
+	(No symbol) [0x00007FF76800A6E5]
+	(No symbol) [0x00007FF76800B021]
+	GetHandleVerifier [0x00007FF76824F83D+1301229]
+	GetHandleVerifier [0x00007FF76825BDB7+1351783]
+	GetHandleVerifier [0x00007FF768252A03+1313971]
+	GetHandleVerifier [0x00007FF76814DD06+245686]
+	(No symbol) [0x00007FF7680D758F]
+	(No symbol) [0x00007FF7680D3804]
+	(No symbol) [0x00007FF7680D3992]
+	(No symbol) [0x00007FF7680CA3EF]
+	BaseThreadInitThunk [0x00007FFF1471257D+29]
+	RtlUserThreadStart [0x00007FFF1596AF28+40]
+
+2024-08-06 16:43:31,214 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe
+2024-08-06 16:43:31,217 - DEBUG - Started executable: `C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe` in a child process with pid: 28004 using 0 to output -3
+2024-08-06 16:43:32,280 - INFO - Existing cookies found at ./saved_cookies/cookies.txt
+2024-08-06 16:43:44,331 - ERROR - Exception occurred in ask method: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF768119632+30946]
+	(No symbol) [0x00007FF7680CE3C9]
+	(No symbol) [0x00007FF767FC6FDA]
+	(No symbol) [0x00007FF76801822C]
+	(No symbol) [0x00007FF76801850C]
+	(No symbol) [0x00007FF76805DCB7]
+	(No symbol) [0x00007FF76803CAAF]
+	(No symbol) [0x00007FF76805B041]
+	(No symbol) [0x00007FF76803C813]
+	(No symbol) [0x00007FF76800A6E5]
+	(No symbol) [0x00007FF76800B021]
+	GetHandleVerifier [0x00007FF76824F83D+1301229]
+	GetHandleVerifier [0x00007FF76825BDB7+1351783]
+	GetHandleVerifier [0x00007FF768252A03+1313971]
+	GetHandleVerifier [0x00007FF76814DD06+245686]
+	(No symbol) [0x00007FF7680D758F]
+	(No symbol) [0x00007FF7680D3804]
+	(No symbol) [0x00007FF7680D3992]
+	(No symbol) [0x00007FF7680CA3EF]
+	BaseThreadInitThunk [0x00007FFF1471257D+29]
+	RtlUserThreadStart [0x00007FFF1596AF28+40]
+
+2024-08-06 16:43:59,614 - ERROR - Exception occurred in ask method: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF768119632+30946]
+	(No symbol) [0x00007FF7680CE3C9]
+	(No symbol) [0x00007FF767FC6FDA]
+	(No symbol) [0x00007FF76801822C]
+	(No symbol) [0x00007FF76801850C]
+	(No symbol) [0x00007FF76805DCB7]
+	(No symbol) [0x00007FF76803CAAF]
+	(No symbol) [0x00007FF76805B041]
+	(No symbol) [0x00007FF76803C813]
+	(No symbol) [0x00007FF76800A6E5]
+	(No symbol) [0x00007FF76800B021]
+	GetHandleVerifier [0x00007FF76824F83D+1301229]
+	GetHandleVerifier [0x00007FF76825BDB7+1351783]
+	GetHandleVerifier [0x00007FF768252A03+1313971]
+	GetHandleVerifier [0x00007FF76814DD06+245686]
+	(No symbol) [0x00007FF7680D758F]
+	(No symbol) [0x00007FF7680D3804]
+	(No symbol) [0x00007FF7680D3992]
+	(No symbol) [0x00007FF7680CA3EF]
+	BaseThreadInitThunk [0x00007FFF1471257D+29]
+	RtlUserThreadStart [0x00007FFF1596AF28+40]
+
+2024-08-06 16:44:14,825 - ERROR - Exception occurred in ask method: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF768119632+30946]
+	(No symbol) [0x00007FF7680CE3C9]
+	(No symbol) [0x00007FF767FC6FDA]
+	(No symbol) [0x00007FF76801822C]
+	(No symbol) [0x00007FF76801850C]
+	(No symbol) [0x00007FF76805DCB7]
+	(No symbol) [0x00007FF76803CAAF]
+	(No symbol) [0x00007FF76805B041]
+	(No symbol) [0x00007FF76803C813]
+	(No symbol) [0x00007FF76800A6E5]
+	(No symbol) [0x00007FF76800B021]
+	GetHandleVerifier [0x00007FF76824F83D+1301229]
+	GetHandleVerifier [0x00007FF76825BDB7+1351783]
+	GetHandleVerifier [0x00007FF768252A03+1313971]
+	GetHandleVerifier [0x00007FF76814DD06+245686]
+	(No symbol) [0x00007FF7680D758F]
+	(No symbol) [0x00007FF7680D3804]
+	(No symbol) [0x00007FF7680D3992]
+	(No symbol) [0x00007FF7680CA3EF]
+	BaseThreadInitThunk [0x00007FFF1471257D+29]
+	RtlUserThreadStart [0x00007FFF1596AF28+40]
+
+2024-08-06 16:44:30,077 - ERROR - Exception occurred in ask method: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF768119632+30946]
+	(No symbol) [0x00007FF7680CE3C9]
+	(No symbol) [0x00007FF767FC6FDA]
+	(No symbol) [0x00007FF76801822C]
+	(No symbol) [0x00007FF76801850C]
+	(No symbol) [0x00007FF76805DCB7]
+	(No symbol) [0x00007FF76803CAAF]
+	(No symbol) [0x00007FF76805B041]
+	(No symbol) [0x00007FF76803C813]
+	(No symbol) [0x00007FF76800A6E5]
+	(No symbol) [0x00007FF76800B021]
+	GetHandleVerifier [0x00007FF76824F83D+1301229]
+	GetHandleVerifier [0x00007FF76825BDB7+1351783]
+	GetHandleVerifier [0x00007FF768252A03+1313971]
+	GetHandleVerifier [0x00007FF76814DD06+245686]
+	(No symbol) [0x00007FF7680D758F]
+	(No symbol) [0x00007FF7680D3804]
+	(No symbol) [0x00007FF7680D3992]
+	(No symbol) [0x00007FF7680CA3EF]
+	BaseThreadInitThunk [0x00007FFF1471257D+29]
+	RtlUserThreadStart [0x00007FFF1596AF28+40]
+
+2024-08-06 16:44:42,429 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe
+2024-08-06 16:44:42,431 - DEBUG - Started executable: `C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe` in a child process with pid: 31232 using 0 to output -3
+2024-08-06 16:44:43,477 - INFO - Existing cookies found at ./saved_cookies/cookies.txt
+2024-08-06 16:46:32,584 - ERROR - Exception occurred in ask method: 'NoneType' object has no attribute 'get_attribute'
+2024-08-06 16:46:37,595 - ERROR - Exception occurred in ask method: Message: no such element: Unable to locate element: {"method":"css selector","selector":".GrowingTextArea_textArea__ZWQbP"}
+  (Session info: chrome=127.0.6533.89); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF768119632+30946]
+	(No symbol) [0x00007FF7680CE3C9]
+	(No symbol) [0x00007FF767FC6FDA]
+	(No symbol) [0x00007FF76801822C]
+	(No symbol) [0x00007FF76801850C]
+	(No symbol) [0x00007FF76805DCB7]
+	(No symbol) [0x00007FF76803CAAF]
+	(No symbol) [0x00007FF76805B041]
+	(No symbol) [0x00007FF76803C813]
+	(No symbol) [0x00007FF76800A6E5]
+	(No symbol) [0x00007FF76800B021]
+	GetHandleVerifier [0x00007FF76824F83D+1301229]
+	GetHandleVerifier [0x00007FF76825BDB7+1351783]
+	GetHandleVerifier [0x00007FF768252A03+1313971]
+	GetHandleVerifier [0x00007FF76814DD06+245686]
+	(No symbol) [0x00007FF7680D758F]
+	(No symbol) [0x00007FF7680D3804]
+	(No symbol) [0x00007FF7680D3992]
+	(No symbol) [0x00007FF7680CA3EF]
+	BaseThreadInitThunk [0x00007FFF1471257D+29]
+	RtlUserThreadStart [0x00007FFF1596AF28+40]
+
+2024-08-06 16:46:42,607 - ERROR - Exception occurred in ask method: Message: no such element: Unable to locate element: {"method":"css selector","selector":".GrowingTextArea_textArea__ZWQbP"}
+  (Session info: chrome=127.0.6533.89); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF768119632+30946]
+	(No symbol) [0x00007FF7680CE3C9]
+	(No symbol) [0x00007FF767FC6FDA]
+	(No symbol) [0x00007FF76801822C]
+	(No symbol) [0x00007FF76801850C]
+	(No symbol) [0x00007FF76805DCB7]
+	(No symbol) [0x00007FF76803CAAF]
+	(No symbol) [0x00007FF76805B041]
+	(No symbol) [0x00007FF76803C813]
+	(No symbol) [0x00007FF76800A6E5]
+	(No symbol) [0x00007FF76800B021]
+	GetHandleVerifier [0x00007FF76824F83D+1301229]
+	GetHandleVerifier [0x00007FF76825BDB7+1351783]
+	GetHandleVerifier [0x00007FF768252A03+1313971]
+	GetHandleVerifier [0x00007FF76814DD06+245686]
+	(No symbol) [0x00007FF7680D758F]
+	(No symbol) [0x00007FF7680D3804]
+	(No symbol) [0x00007FF7680D3992]
+	(No symbol) [0x00007FF7680CA3EF]
+	BaseThreadInitThunk [0x00007FFF1471257D+29]
+	RtlUserThreadStart [0x00007FFF1596AF28+40]
+
+2024-08-06 16:46:47,617 - ERROR - Exception occurred in ask method: Message: no such element: Unable to locate element: {"method":"css selector","selector":".GrowingTextArea_textArea__ZWQbP"}
+  (Session info: chrome=127.0.6533.89); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF768119632+30946]
+	(No symbol) [0x00007FF7680CE3C9]
+	(No symbol) [0x00007FF767FC6FDA]
+	(No symbol) [0x00007FF76801822C]
+	(No symbol) [0x00007FF76801850C]
+	(No symbol) [0x00007FF76805DCB7]
+	(No symbol) [0x00007FF76803CAAF]
+	(No symbol) [0x00007FF76805B041]
+	(No symbol) [0x00007FF76803C813]
+	(No symbol) [0x00007FF76800A6E5]
+	(No symbol) [0x00007FF76800B021]
+	GetHandleVerifier [0x00007FF76824F83D+1301229]
+	GetHandleVerifier [0x00007FF76825BDB7+1351783]
+	GetHandleVerifier [0x00007FF768252A03+1313971]
+	GetHandleVerifier [0x00007FF76814DD06+245686]
+	(No symbol) [0x00007FF7680D758F]
+	(No symbol) [0x00007FF7680D3804]
+	(No symbol) [0x00007FF7680D3992]
+	(No symbol) [0x00007FF7680CA3EF]
+	BaseThreadInitThunk [0x00007FFF1471257D+29]
+	RtlUserThreadStart [0x00007FFF1596AF28+40]
+
+2024-08-06 16:46:52,642 - ERROR - Exception occurred in ask method: Message: no such element: Unable to locate element: {"method":"css selector","selector":".GrowingTextArea_textArea__ZWQbP"}
+  (Session info: chrome=127.0.6533.89); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF768119632+30946]
+	(No symbol) [0x00007FF7680CE3C9]
+	(No symbol) [0x00007FF767FC6FDA]
+	(No symbol) [0x00007FF76801822C]
+	(No symbol) [0x00007FF76801850C]
+	(No symbol) [0x00007FF76805DCB7]
+	(No symbol) [0x00007FF76803CAAF]
+	(No symbol) [0x00007FF76805B041]
+	(No symbol) [0x00007FF76803C813]
+	(No symbol) [0x00007FF76800A6E5]
+	(No symbol) [0x00007FF76800B021]
+	GetHandleVerifier [0x00007FF76824F83D+1301229]
+	GetHandleVerifier [0x00007FF76825BDB7+1351783]
+	GetHandleVerifier [0x00007FF768252A03+1313971]
+	GetHandleVerifier [0x00007FF76814DD06+245686]
+	(No symbol) [0x00007FF7680D758F]
+	(No symbol) [0x00007FF7680D3804]
+	(No symbol) [0x00007FF7680D3992]
+	(No symbol) [0x00007FF7680CA3EF]
+	BaseThreadInitThunk [0x00007FFF1471257D+29]
+	RtlUserThreadStart [0x00007FFF1596AF28+40]
+
+2024-08-06 16:46:57,659 - ERROR - Exception occurred in ask method: Message: no such element: Unable to locate element: {"method":"css selector","selector":".GrowingTextArea_textArea__ZWQbP"}
+  (Session info: chrome=127.0.6533.89); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF768119632+30946]
+	(No symbol) [0x00007FF7680CE3C9]
+	(No symbol) [0x00007FF767FC6FDA]
+	(No symbol) [0x00007FF76801822C]
+	(No symbol) [0x00007FF76801850C]
+	(No symbol) [0x00007FF76805DCB7]
+	(No symbol) [0x00007FF76803CAAF]
+	(No symbol) [0x00007FF76805B041]
+	(No symbol) [0x00007FF76803C813]
+	(No symbol) [0x00007FF76800A6E5]
+	(No symbol) [0x00007FF76800B021]
+	GetHandleVerifier [0x00007FF76824F83D+1301229]
+	GetHandleVerifier [0x00007FF76825BDB7+1351783]
+	GetHandleVerifier [0x00007FF768252A03+1313971]
+	GetHandleVerifier [0x00007FF76814DD06+245686]
+	(No symbol) [0x00007FF7680D758F]
+	(No symbol) [0x00007FF7680D3804]
+	(No symbol) [0x00007FF7680D3992]
+	(No symbol) [0x00007FF7680CA3EF]
+	BaseThreadInitThunk [0x00007FFF1471257D+29]
+	RtlUserThreadStart [0x00007FFF1596AF28+40]
+
+2024-08-06 16:47:02,669 - ERROR - Exception occurred in ask method: Message: no such element: Unable to locate element: {"method":"css selector","selector":".GrowingTextArea_textArea__ZWQbP"}
+  (Session info: chrome=127.0.6533.89); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF768119632+30946]
+	(No symbol) [0x00007FF7680CE3C9]
+	(No symbol) [0x00007FF767FC6FDA]
+	(No symbol) [0x00007FF76801822C]
+	(No symbol) [0x00007FF76801850C]
+	(No symbol) [0x00007FF76805DCB7]
+	(No symbol) [0x00007FF76803CAAF]
+	(No symbol) [0x00007FF76805B041]
+	(No symbol) [0x00007FF76803C813]
+	(No symbol) [0x00007FF76800A6E5]
+	(No symbol) [0x00007FF76800B021]
+	GetHandleVerifier [0x00007FF76824F83D+1301229]
+	GetHandleVerifier [0x00007FF76825BDB7+1351783]
+	GetHandleVerifier [0x00007FF768252A03+1313971]
+	GetHandleVerifier [0x00007FF76814DD06+245686]
+	(No symbol) [0x00007FF7680D758F]
+	(No symbol) [0x00007FF7680D3804]
+	(No symbol) [0x00007FF7680D3992]
+	(No symbol) [0x00007FF7680CA3EF]
+	BaseThreadInitThunk [0x00007FFF1471257D+29]
+	RtlUserThreadStart [0x00007FFF1596AF28+40]
+
+2024-08-06 16:48:56,136 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe
+2024-08-06 16:48:56,139 - DEBUG - Started executable: `C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe` in a child process with pid: 30060 using 0 to output -3
+2024-08-06 16:48:57,305 - INFO - Existing cookies found at ./saved_cookies/cookies.txt
+2024-08-06 16:49:22,408 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe
+2024-08-06 16:49:22,412 - DEBUG - Started executable: `C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe` in a child process with pid: 25408 using 0 to output -3
+2024-08-06 16:49:23,454 - INFO - Existing cookies found at ./saved_cookies/cookies.txt
+2024-08-06 16:50:57,204 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe
+2024-08-06 16:50:57,209 - DEBUG - Started executable: `C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe` in a child process with pid: 16164 using 0 to output -3
+2024-08-06 16:50:58,276 - INFO - Existing cookies found at ./saved_cookies/cookies.txt
+2024-08-06 16:52:41,452 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe
+2024-08-06 16:52:41,456 - DEBUG - Started executable: `C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe` in a child process with pid: 23656 using 0 to output -3
+2024-08-06 16:52:43,144 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe
+2024-08-06 16:52:43,149 - DEBUG - Started executable: `C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe` in a child process with pid: 9712 using 0 to output -3
+2024-08-06 16:53:48,190 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe
+2024-08-06 16:53:48,194 - DEBUG - Started executable: `C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe` in a child process with pid: 24660 using 0 to output -3
+2024-08-06 16:53:49,880 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe
+2024-08-06 16:53:49,885 - DEBUG - Started executable: `C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe` in a child process with pid: 508 using 0 to output -3
+2024-08-06 16:54:23,204 - ERROR - Exception occurred in ask method: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF768119632+30946]
+	(No symbol) [0x00007FF7680CE3C9]
+	(No symbol) [0x00007FF767FC6FDA]
+	(No symbol) [0x00007FF76801822C]
+	(No symbol) [0x00007FF76801850C]
+	(No symbol) [0x00007FF76805DCB7]
+	(No symbol) [0x00007FF76803CAAF]
+	(No symbol) [0x00007FF76805B041]
+	(No symbol) [0x00007FF76803C813]
+	(No symbol) [0x00007FF76800A6E5]
+	(No symbol) [0x00007FF76800B021]
+	GetHandleVerifier [0x00007FF76824F83D+1301229]
+	GetHandleVerifier [0x00007FF76825BDB7+1351783]
+	GetHandleVerifier [0x00007FF768252A03+1313971]
+	GetHandleVerifier [0x00007FF76814DD06+245686]
+	(No symbol) [0x00007FF7680D758F]
+	(No symbol) [0x00007FF7680D3804]
+	(No symbol) [0x00007FF7680D3992]
+	(No symbol) [0x00007FF7680CA3EF]
+	BaseThreadInitThunk [0x00007FFF1471257D+29]
+	RtlUserThreadStart [0x00007FFF1596AF28+40]
+
+2024-08-06 16:58:26,434 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe
+2024-08-06 16:58:26,441 - DEBUG - Started executable: `C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe` in a child process with pid: 32608 using 0 to output -3
+2024-08-06 16:58:27,860 - INFO - Existing cookies found at ./saved_cookies/cookies.txt
+2024-08-06 16:59:51,476 - DEBUG - Skipping Selenium Manager; path to chrome driver specified in Service class: C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe
+2024-08-06 16:59:51,481 - DEBUG - Started executable: `C:\Users\yhb19\.conda\envs\chatgpt\Lib\site-packages\seleniumbase\drivers/chromedriver.exe` in a child process with pid: 13316 using 0 to output -3
+2024-08-06 16:59:52,683 - INFO - Existing cookies found at ./saved_cookies/cookies.txt
