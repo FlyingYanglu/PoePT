@@ -37,6 +37,8 @@ from selenium.common.exceptions import NoSuchElementException, StaleElementRefer
 from selenium.webdriver.support import expected_conditions as EC
 from .tools import speech, record
 from selenium.webdriver.common.keys import Keys
+import json
+import time
 
 # Configure logging
 logging.basicConfig(filename='poebot.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -80,7 +82,7 @@ class PoePT:
         - bool: True if cookies were loaded successfully, False otherwise.
         """
         if self.driver:
-            with open("saved_cookies/cookies.txt", 'r') as f:
+            with open(f"saved_cookies/cookies_{self.email}.txt", 'r') as f:
                 cookies = json.load(f)
             for cookie in cookies:
                 self.driver.add_cookie(cookie)
@@ -128,11 +130,12 @@ class PoePT:
         Returns:
         - bool: True if login successful, False otherwise.
         """
+        self.email = email
         if not isinstance(email, str):
             raise ValueError("email must be a string.")
         
-        if os.path.exists("saved_cookies/cookies.txt"):
-            logging.info("Existing cookies found at ./saved_cookies/cookies.txt")
+        if os.path.exists(f"saved_cookies/cookies_{email}.txt"):
+            logging.info(f"Existing cookies found at ./saved_cookies/cookies_{email}.txt")
             self.status = "ready"
             return True
 
@@ -148,7 +151,7 @@ class PoePT:
                 sb.type(self.code_form, code)
                 sb.click(self.login_btn)
                 sb.assert_element(self.query_input_form)
-                sb.save_cookies(name="cookies.txt")
+                sb.save_cookies(name=f"cookies_{email}.txt")
                 self.status = "ready"
                 return True
             
@@ -200,8 +203,10 @@ class PoePT:
             # for line in prompt.split('\n'):
             #     input_form.send_keys(line)
             #     input_form.send_keys(Keys.SHIFT, Keys.ENTER)
-            self.driver.execute_script(f"arguments[0].value = `{prompt}`;", input_form)
+            escaped_prompt = prompt.replace('`', '\\`')
+            self.driver.execute_script(f"""arguments[0].value = `{escaped_prompt}`;""", input_form)
             input_form.send_keys(Keys.SPACE)
+
             if attach_file:
                 if not os.path.exists(attach_file):
                     raise FileNotFoundError(f"The file {attach_file} does not exist.")
@@ -211,6 +216,8 @@ class PoePT:
             self.driver.find_element(By.CSS_SELECTOR, self.query_send_btn).click()
             WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, self.msg_element)))
 
+            time.sleep(1)
+
             msg = None
             while True:
                 try:
@@ -218,7 +225,7 @@ class PoePT:
                     if msg.get_attribute("data-complete") == "false": break
                 except (NoSuchElementException, StaleElementReferenceException):
                     pass
-    
+            time.sleep(1)
             while True:
                 self.response = msg.text
                 msg = self.driver.find_element(By.XPATH, f"(//div[@class='{self.msg_element[1:]}'])[last()]")
