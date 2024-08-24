@@ -101,7 +101,8 @@ class PoePT:
                file_input_box=".ChatMessageInputAttachments_container__AAxGu", #CSS selector for the file input box in chat.
                voice_input_btn=".ChatMessageVoiceInputButton_button__NjXno",  #CSS selector for the voice input button.
                msg_element=".ChatMessage_chatMessage__xkgHx", #CSS selector for the response message element div.
-               msg_image="MarkdownImage_image__3dBzJ"#CSS selector for the response message picture element img.
+               msg_image="MarkdownImage_image__3dBzJ",#CSS selector for the response message picture element img.
+               msg_pair=".ChatMessagesView_messagePair__ZEXUz"
             ):
         """
         Configure the web elements' selectors for interaction.
@@ -119,6 +120,7 @@ class PoePT:
         self.voice_input_btn = voice_input_btn
         self.msg_element = msg_element
         self.msg_image = msg_image
+        self.msg_pair = msg_pair
 
     def login(self, 
               email #Email address used for login.
@@ -213,26 +215,52 @@ class PoePT:
                 self.driver.find_element(By.CSS_SELECTOR, self.file_input_form).send_keys(attach_file)
                 WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, self.file_input_box)))
 
+            num_msgs = len(self.driver.find_elements(By.XPATH, f"//div[@class='{self.msg_pair[1:]}']"))
             self.driver.find_element(By.CSS_SELECTOR, self.query_send_btn).click()
             WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, self.msg_element)))
 
-            time.sleep(1)
+            # time.sleep(1) 
 
-            msg = None
+            # msg = None
+            # while True:
+            #     try:
+            #         msg = self.driver.find_element(By.XPATH, f"(//div[@class='{self.msg_element[1:]}'])[last()]")
+            #         if msg.get_attribute("data-complete") == "false": break
+            #         if "You are sending too many messages" in self.response:
+            #             raise Exception("Rate limit exceeded. Please wait before sending another message.")
+            #     except (NoSuchElementException, StaleElementReferenceException):
+            #         pass
+            # time.sleep(1)
+            # while True:
+            #     self.response = msg.text
+            #     msg = self.driver.find_element(By.XPATH, f"(//div[@class='{self.msg_element[1:]}'])[last()]")
+            #     if msg.get_attribute("data-complete") == "true": break
+            #     if "You are sending too many messages" in self.response:
+            #         raise Exception("Rate limit exceeded. Please wait before sending another message.")
+            num_continuous_increase = 10
             while True:
-                try:
-                    msg = self.driver.find_element(By.XPATH, f"(//div[@class='{self.msg_element[1:]}'])[last()]")
-                    if msg.get_attribute("data-complete") == "false": break
-                except (NoSuchElementException, StaleElementReferenceException):
-                    pass
-            time.sleep(1)
+                num_msgs_new = len(self.driver.find_elements(By.XPATH, f"//div[@class='{self.msg_pair[1:]}']"))
+                if num_msgs_new == num_msgs + 1:
+                    num_continuous_increase -= 1
+                else:
+                    num_continuous_increase = 10
+                if num_continuous_increase == 0:
+                    break
+                time.sleep(0.25)
+            
+
+            new_msg_pair = self.driver.find_element(By.XPATH, f"//div[@class='{self.msg_pair[1:]}'][last()]")
+        
             while True:
-                self.response = msg.text
-                msg = self.driver.find_element(By.XPATH, f"(//div[@class='{self.msg_element[1:]}'])[last()]")
-                if msg.get_attribute("data-complete") == "true": break
-            
-            
-            self.response = '\n'.join(msg.text.split('\n')[2:])
+                msgs = new_msg_pair.find_elements(By.XPATH, f".//div[@class='{self.msg_element[1:]}']")
+                if len(msgs) >= 2:
+                    if msgs[1].get_attribute("data-complete") == "true": 
+                        self.response = msgs[1].text
+                        break
+            if "You are sending too many messages" in self.response:
+                raise Exception("Rate limit exceeded. Please wait before sending another message.")
+            self.response = '\n'.join(self.response.split('\n')[2:])
+            print("final response:",  self.response)
             if img_output:
                 self.response += msg.find_element(By.CSS_SELECTOR, self.msg_image).get_attribute("src")
 
