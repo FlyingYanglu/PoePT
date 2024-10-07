@@ -17,7 +17,8 @@ setup(
         'SpeechRecognition',
         'pyaudio',
         'requests',
-        'zipp'
+        'zipp',
+        'seleniumbase'
     ],
     classifiers=[
         'Development Status :: 3 - Alpha',
