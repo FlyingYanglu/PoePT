@@ -8,8 +8,8 @@ setup(
     version='0.2.4',
     description='Python package for interacting with the Quora POE chatbot',
     author='Saikyo0',
-    author_email='mamaexus@gmail.com',
-    url='https://github.com/saikyo0/PoePT',
+    author_email='',
+    url='https://github.com/FlyingYanglu/PoePT-fixed',
     packages=['poept'],
     install_requires=[
         'selenium',
