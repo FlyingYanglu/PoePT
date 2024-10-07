@@ -33,12 +33,13 @@ import logging
 from seleniumbase import Driver, SB
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.common.exceptions import NoSuchElementException, StaleElementReferenceException 
+from selenium.common.exceptions import NoSuchElementException, StaleElementReferenceException, ToomanyRequestsException
 from selenium.webdriver.support import expected_conditions as EC
 from .tools import speech, record
 from selenium.webdriver.common.keys import Keys
 import json
 import time
+
 
 # Configure logging
 logging.basicConfig(filename='poebot.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -257,10 +258,9 @@ class PoePT:
                     if msgs[1].get_attribute("data-complete") == "true": 
                         self.response = msgs[1].text
                         break
-            if "You are sending too many messages" in self.response:
-                raise Exception("Rate limit exceeded. Please wait before sending another message.")
+            if "You are sending and" in self.response:
+                raise ToomanyRequestsException("Rate limit exceeded. Please wait before sending another message.")
             self.response = '\n'.join(self.response.split('\n')[2:])
-            print("final response:",  self.response)
             if img_output:
                 self.response += msg.find_element(By.CSS_SELECTOR, self.msg_image).get_attribute("src")
 
@@ -269,6 +269,7 @@ class PoePT:
         
         except Exception as e:
             logging.error(f"Exception occurred in ask method: {e}")
+            raise e
             return ""
 
     def clear_chat(self):
