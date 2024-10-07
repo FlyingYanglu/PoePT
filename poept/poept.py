@@ -33,7 +33,8 @@ import logging
 from seleniumbase import Driver, SB
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.common.exceptions import NoSuchElementException, StaleElementReferenceException, ToomanyRequestsException
+from selenium.common.exceptions import NoSuchElementException, StaleElementReferenceException
+from poept.exceptions import ToomanyRequestsException
 from selenium.webdriver.support import expected_conditions as EC
 from .tools import speech, record
 from selenium.webdriver.common.keys import Keys

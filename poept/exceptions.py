@@ -1,0 +1,3 @@
+
+class ToomanyRequestsException(Exception):
+    pass
