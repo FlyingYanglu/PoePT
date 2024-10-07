@@ -21,7 +21,7 @@ py -m pip install poept -U
 ```
 or
 ```
-py -m pip install git+https://github.com/Saikyo0/poept@main
+py -m pip install git+https://github.com/FlyingYanglu/PoePT-fixed@main
 ```  
 <br />
 
