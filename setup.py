@@ -14,7 +14,10 @@ setup(
     install_requires=[
         'selenium',
         'webdriver_manager',
-        'SpeechRecognition'
+        'SpeechRecognition',
+        'pyaudio',
+        'requests',
+        'zipp'
     ],
     classifiers=[
         'Development Status :: 3 - Alpha',
