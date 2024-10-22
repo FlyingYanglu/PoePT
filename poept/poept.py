@@ -34,7 +34,7 @@ from seleniumbase import Driver, SB
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.common.exceptions import NoSuchElementException, StaleElementReferenceException
-from poept.exceptions import ToomanyRequestsException
+from poept.exceptions import ToomanyRequestsException, TimeoutException
 from selenium.webdriver.support import expected_conditions as EC
 from .tools import speech, record
 from selenium.webdriver.common.keys import Keys
@@ -197,7 +197,10 @@ class PoePT:
             self.current_bot = bot
             self.load_cookies()
             self.driver.refresh()
-            WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, self.query_input_form)))
+            try:
+                WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, self.query_input_form)))
+            except Exception as e:
+                raise TimeoutException("Timeout after 10 seconds.")
         
         try:
             self.prompt = prompt
@@ -219,7 +222,10 @@ class PoePT:
 
             num_msgs = len(self.driver.find_elements(By.XPATH, f"//div[@class='{self.msg_pair[1:]}']"))
             self.driver.find_element(By.CSS_SELECTOR, self.query_send_btn).click()
-            WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, self.msg_element)))
+            try:
+                WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, self.msg_element)))
+            except Exception as e:
+                raise TimeoutException("Timeout after 10 seconds.")
 
             # time.sleep(1) 
 
@@ -239,6 +245,8 @@ class PoePT:
             #     if msg.get_attribute("data-complete") == "true": break
             #     if "You are sending too many messages" in self.response:
             #         raise Exception("Rate limit exceeded. Please wait before sending another message.")
+
+            start_time = time.time()
             num_continuous_increase = 10
             while True:
                 num_msgs_new = len(self.driver.find_elements(By.XPATH, f"//div[@class='{self.msg_pair[1:]}']"))
@@ -249,6 +257,9 @@ class PoePT:
                 if num_continuous_increase == 0:
                     break
                 time.sleep(0.25)
+                # if current time - start time > 15mins, raise exception
+                if time.time() - start_time > 900:
+                    raise TimeoutException("Timeout after 15 minutes.")
             
 
             new_msg_pair = self.driver.find_element(By.XPATH, f"//div[@class='{self.msg_pair[1:]}'][last()]")
@@ -259,7 +270,10 @@ class PoePT:
                     if msgs[1].get_attribute("data-complete") == "true": 
                         self.response = msgs[1].text
                         break
+                if time.time() - start_time > 900:
+                    raise TimeoutException("Timeout after 15 minutes.")
             if "You are sending and" in self.response:
+                print("raised here")
                 raise ToomanyRequestsException("Rate limit exceeded. Please wait before sending another message.")
             self.response = '\n'.join(self.response.split('\n')[2:])
             if img_output:
