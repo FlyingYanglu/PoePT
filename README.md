@@ -21,7 +21,7 @@ pip install poept -U
 ```
 or
 ```
-pip install git+https://github.com/FlyingYanglu/PoePT-fixed@main
+pip install git+https://github.com/FlyingYanglu/PoePT@main
 ```  
 <br />
 
