@@ -15,7 +15,6 @@ setup(
         'selenium',
         'webdriver_manager',
         'SpeechRecognition',
-        'pyaudio',
         'requests',
         'zipp',
         'seleniumbase'
