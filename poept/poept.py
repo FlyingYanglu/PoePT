@@ -28,7 +28,6 @@ bot.close()
 
 import os
 import json
-import pyaudio
 import logging
 from seleniumbase import Driver, SB
 from selenium.webdriver.common.by import By
@@ -305,43 +304,6 @@ class PoePT:
             print("Chat cleared.")
             return True
         
-        except Exception as e:
-            logging.error(e)
-            return
-
-    def live_voice(self,
-                   timeout, #Timeout in seconds for recording voice input.
-                   fs=44100, #Sampling frequency for recording.
-                   micindex=-1, #Index of the microphone to use. empty for default
-                   file="audio.wav", #File path to save the recorded audio.
-                   chunk=1024, #Size of audio chunks for processing.
-                ):
-        """
-        Record live voice input and convert it to text.
-        
-        Returns:
-        - str: Text transcription of the recorded voice input.
-        """
-        if not isinstance(timeout, int):
-            raise ValueError("timeout must be an integer.")
-        if not isinstance(timeout, int):
-            raise ValueError("timeout must be an integer.")
-        if not isinstance(fs, int):
-            raise ValueError("fs must be an integer.")
-        if not isinstance(micindex, int):
-            raise ValueError("micindex must be an integer.")
-        if not isinstance(file, str):
-            raise ValueError("file must be a string.")
-        if not isinstance(chunk, int):
-            raise ValueError("chunk must be an integer.")
-        
-        try:
-            p = pyaudio.PyAudio()
-            if (micindex == -1):
-                micindex = p.get_default_input_device_info()['index']
-
-            prompt = speech(record(timeout, fs, micindex, file, chunk))
-            return prompt
         except Exception as e:
             logging.error(e)
             return
