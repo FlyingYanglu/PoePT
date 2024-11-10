@@ -4,3 +4,7 @@ class ToomanyRequestsException(Exception):
 
 class TimeoutException(Exception):
     pass
+
+
+class TooLongResponseException(Exception):
+    pass

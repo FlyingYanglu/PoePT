@@ -34,7 +34,7 @@ from seleniumbase import Driver, SB
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.common.exceptions import NoSuchElementException, StaleElementReferenceException
-from poept.exceptions import ToomanyRequestsException, TimeoutException
+from poept.exceptions import ToomanyRequestsException, TimeoutException, TooLongResponseException
 from selenium.webdriver.support import expected_conditions as EC
 from .tools import speech, record
 from selenium.webdriver.common.keys import Keys
@@ -273,8 +273,12 @@ class PoePT:
                 if time.time() - start_time > 900:
                     raise TimeoutException("Timeout after 15 minutes.")
             if "You are sending and" in self.response:
-                print("raised here")
                 raise ToomanyRequestsException("Rate limit exceeded. Please wait before sending another message.")
+            if "This response was limited" in self.response:
+                raise TooLongResponseException("Response too long. Please try again with a shorter prompt.")
+
+            if "needs more points to answer your request" in self.response:
+                raise TimeoutException("Rate limit exceeded. Please wait before sending another message.")
             self.response = '\n'.join(self.response.split('\n')[2:])
             if img_output:
                 self.response += msg.find_element(By.CSS_SELECTOR, self.msg_image).get_attribute("src")
