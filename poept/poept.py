@@ -46,7 +46,7 @@ logging.basicConfig(filename='poebot.log', level=logging.DEBUG, format='%(asctim
 
 class PoePT:
     def __init__(self, 
-                 headless=False, #Whether to run the browser in headless mode
+                 headless=True, #Whether to run the browser in headless mode
         ):
         """
         Initialize the PoePT class with optional headless browser mode.
@@ -55,7 +55,12 @@ class PoePT:
             raise ValueError("headless must be a boolean value.")
         
         self.headless = headless
-        self.driver = Driver(headless2=headless)
+        options = {
+            "headless": headless,
+            "headless1": headless,
+            "headless2": headless,
+        }
+        self.driver = Driver(**options)
         self.status = "false"
         self.current_bot = ""
         self.prompt = ""
@@ -225,26 +230,6 @@ class PoePT:
                 WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, self.msg_element)))
             except Exception as e:
                 raise TimeoutException("Timeout after 10 seconds.")
-
-            # time.sleep(1) 
-
-            # msg = None
-            # while True:
-            #     try:
-            #         msg = self.driver.find_element(By.XPATH, f"(//div[@class='{self.msg_element[1:]}'])[last()]")
-            #         if msg.get_attribute("data-complete") == "false": break
-            #         if "You are sending too many messages" in self.response:
-            #             raise Exception("Rate limit exceeded. Please wait before sending another message.")
-            #     except (NoSuchElementException, StaleElementReferenceException):
-            #         pass
-            # time.sleep(1)
-            # while True:
-            #     self.response = msg.text
-            #     msg = self.driver.find_element(By.XPATH, f"(//div[@class='{self.msg_element[1:]}'])[last()]")
-            #     if msg.get_attribute("data-complete") == "true": break
-            #     if "You are sending too many messages" in self.response:
-            #         raise Exception("Rate limit exceeded. Please wait before sending another message.")
-
             start_time = time.time()
             num_continuous_increase = 10
             while True:
@@ -307,6 +292,7 @@ class PoePT:
         except Exception as e:
             logging.error(e)
             return
+
 
     def file_voice(self, 
                    file="audio.wav", #Absolute path to the audio file.
