@@ -1,8 +1,5 @@
 from setuptools import setup
 
-with open('readme.md', 'r') as f:
-    readme = f.read()
-
 setup(
     name='PoePT',
     version='0.2.4',
